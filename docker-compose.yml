@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+
+        node:
+                build: ./node
+                container_name: node
+                restart: always
+                tty: true                        
+                working_dir: /usr/src/app
+                expose:
+                        - 8080                      
+                networks:
+                        - app-network
+
+        nginx:
+                build: ./nginx
+                container_name: nginx
+                restart: always
+                ports:
+                        - "80:80"
+                networks:
+                        - app-network
+
+networks:
+        app-network:
+                driver: bridge
+
+
