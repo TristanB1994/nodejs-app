@@ -4,9 +4,11 @@ services:
 
         node:
                 build: ./node
+                depends_on:
+                        - nginx
                 container_name: node
                 restart: always
-                tty: true                        
+                tty: true                
                 working_dir: /usr/src/app
                 expose:
                         - 8080                      
