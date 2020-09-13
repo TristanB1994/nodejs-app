@@ -5,6 +5,6 @@ Start instructions \
 ~/docker-compose up -d 
 
 Make sure the containers node & nginx have started successfully \
-~/docker ps 
+~/docker ps && curl 0.0.0.0
 
 start work with nodejs feature exploration!
