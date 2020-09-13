@@ -1,6 +1,6 @@
 # Nginx + NodeJs Pod 
 Start instructions \
-~/git clone repo-link \
+~/git clone https://github.com/TristanB1994/nodejs-app.git \
 ~/cd nodejs-app \
 ~/docker-compose up -d 
 
