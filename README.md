@@ -1,4 +1,4 @@
-# Nginx + NodeJs Pod \
+# Nginx + NodeJs Pod 
 Start instructions \
 ~/git clone repo-link \
 ~/cd nodejs-app \
